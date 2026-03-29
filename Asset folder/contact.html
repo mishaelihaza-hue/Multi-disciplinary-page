@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Mishael Ihaza</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #0a0f1f;
+  --card: rgba(255,255,255,0.05);
+  --text: #e2e8f0;
+  --accent: #00f5ff;
+}
+
+.light-mode {
+  --bg: #f1f5f9;
+  --card: #ffffff;
+  --text: #0f172a;
+  --accent: #2563eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: var(--text);
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+nav a {
+  color: var(--accent);
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+/* CONTACT */
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.card {
+  background: var(--card);
+  padding: 2rem;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  line-height: 2;
+}
+
+.card h3 {
+  color: var(--accent);
+}
+
+/* BUTTON */
+.toggle-btn {
+  border: 1px solid var(--accent);
+  background: none;
+  color: var(--accent);
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h3>Mishael Ihaza</h3>
+  <div>
+<a href="../index.html">Home</a>
+    <button class="toggle-btn" onclick="toggleTheme()">🌙</button>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="card">
+    <h3>Contact Me</h3>
+
+    <p><strong>Phone:</strong> 08058527928</p>
+    <p><strong>WhatsApp:</strong> 08058527928</p>
+
+    <p><strong>Social Media:</strong></p>
+    <ul>
+      <li>Instagram: @yourhandle</li>
+      <li>Twitter (X): @yourhandle</li>
+      <li>LinkedIn: Your Name</li>
+    </ul>
+
+  </div>
+</div>
+
+<script>
+function toggleTheme() {
+  document.body.classList.toggle("light-mode");
+}
+</script>
+
+</body>
+</html>

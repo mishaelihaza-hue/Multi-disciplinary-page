@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me | Mishael Ihaza</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<img src="images/share_pdf_exportpage2.png"
+        alt="Profile picture"
+        class="profile-pic">
+<style>
+:root {
+  --bg: #0a0f1f;
+  --card: rgba(255,255,255,0.05);
+  --text: #e2e8f0;
+  --accent: #00f5ff;
+}
+
+.light-mode {
+  --bg: #f1f5f9;
+  --card: #ffffff;
+  --text: #0f172a;
+  --accent: #2563eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: var(--text);
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+nav a {
+  color: var(--accent);
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 3rem;
+}
+
+.hero h2 span {
+  color: var(--accent);
+}
+
+/* CARD */
+.profile-card {
+  max-width: 800px;
+  margin: auto;
+  background: var(--card);
+  padding: 2rem;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  line-height: 1.7;
+}
+
+.profile-card h3 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+/* BUTTON */
+.toggle-btn {
+  border: 1px solid var(--accent);
+  background: none;
+  color: var(--accent);
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h3>Mishael Ihaza</h3>
+  <div>
+  <a href="../index.html">Home</a>
+    <button class="toggle-btn" onclick="toggleTheme()">🌙</button>
+  </div>
+</nav>
+
+<section class="hero">
+  <h2>About <span>Me</span></h2>
+</section>
+
+<div class="profile-card">
+  <h3>Profile</h3>
+  <p>
+    My name is <strong>Mishael Ihaza</strong>, a passionate and aspiring IT professional with a growing interest in multiple areas of technology.
+  </p>
+
+  <p>
+    I completed my early education at <strong>Brightack School</strong>, where I developed a strong foundation in academics and discovered my interest in technology.
+  </p>
+
+  <p>
+    I am currently a student at <strong>Bingham University</strong>, where I continue to expand my knowledge and skills in the field of Information Technology.
+  </p>
+
+  <p>
+    At the moment, I am actively focusing on <strong>Cybersecurity</strong>, learning how to protect systems, networks, and data from digital threats while also exploring other IT disciplines.
+  </p>
+
+  <p>
+    My goal is to become a well-rounded technology professional capable of solving real-world problems using modern digital tools.
+  </p>
+</div>
+
+<script>
+function toggleTheme() {
+  document.body.classList.toggle("light-mode");
+}
+</script>
+
+</body>
+</html>
